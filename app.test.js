@@ -2,7 +2,7 @@ const request = require('supertest');
 const app = require('./index'); // Import your app logic
 
 // Test suite for the main application
-describe('GET /', () => {
+describe('GET /home', () => {
 
   // Test case
   it('should respond with a 200 status and "Hello, World!" JSON', async () => {
