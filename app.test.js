@@ -9,7 +9,7 @@ describe('GET /home', () => {
     
     // 'await' performs the request and waits for the response
     const response = await request(app)
-      .get('/')
+      .get('/home')
       .expect('Content-Type', /json/) // Check that the content-type header is "application/json"
       .expect(200); // Check that the status code is 200
 
