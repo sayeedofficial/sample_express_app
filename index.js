@@ -6,11 +6,4 @@ app.get("/home", (req, res) => {
   res.status(200).json({ message: "Hello, World!" });
 });
 
-app.get("/health", (req, res) => {
-  console.log("Request received at " + req.url);
-  res.status(200).json({ message: "Hello, World!" });
-});
-
-
-
 module.exports = app;
