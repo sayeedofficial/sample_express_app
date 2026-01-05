@@ -7,4 +7,9 @@ app.get("/home", (req, res) => {
 });
 
 
+app.get("/about", (req, res) => {
+  console.log("Request received at " + req.url);
+  res.status(200).json({ message: "About Us" });
+});
+
 module.exports = app;
