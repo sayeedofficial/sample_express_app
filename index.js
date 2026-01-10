@@ -9,7 +9,7 @@ app.get("/home", (req, res) => {
 
 app.get("/help",(req,res)=>{
   console.log("Help endpoint accessed at " + req.url);
-  res.status(200).json({ message: "This is the help page." });
+  res.status(200).json({ message: "This is the help page. Contact here" });
 });
 
 module.exports = app;
